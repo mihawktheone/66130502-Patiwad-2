@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris prediction</title>
+    <link rel="stylesheet" href="{{ url_for ('static', filename='style.css') }}">
+    
+</head>
+
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/All_result">All result</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="form">
+        <form action="/" method="post">
+            <label for="sepal_length">sepal length (cm):</label>
+            <input type="text" id="sepal_length" name="sepal_length"><br>
+            <label for="sepal_width">sepal width (cm):</label>
+            <input type="text" id="sepal_width" name="sepal_width"><br>
+            <label for="petal_length">petal length (cm):</label>
+            <input type="text" id="petal_length" name="petal_length"><br>
+            <label for="petal_width">petal width (cm):</label>
+            <input type="text" id="petal_width" name="petal_width"><br>
+            <input type="submit" value="Submit" class="submit">
+        </form>
+
+    </div>
+    <br>
+    {%if prediction%}
+    <div>
+        <span class="thick1">Iris type prediction is:</span><span class="thick2"> {{ prediction }}</span>
+    </div>
+    {%endif%}
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All result</title>
+    <link rel="stylesheet" href="{{ url_for ('static', filename='style.css') }}">
+    
+</head>
+
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/All_result">All result</a></li>
+            </ul>
+        </nav>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>sepal length</th>
+                <th>sepal width</th>
+                <th>petal length</th>
+                <th>petal width</th>
+                <th>prediction</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+            <tr>
+                {% for column in row %}
+                <td>{{ column }}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+
+</html>

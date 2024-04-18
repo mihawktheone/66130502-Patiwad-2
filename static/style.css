@@ -1,0 +1,103 @@
+body {
+  background-color: #a2fee1;
+  font-family: cursive;
+}
+
+input[type=text],
+select {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.form {
+  border-radius: 5px;
+  background-color: #4fe5ff;
+  padding: 20px;
+}
+
+div .submit{
+  font-weight: 500;
+}
+
+input[type=submit] {
+  width: 30%;
+  background-color: #2600ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+span.thick1 {
+  font-weight: italic;
+  color: #010101;
+  font-size: 2em;
+}
+
+span.thick2 {
+  font-weight: talic;
+  color: #000000;
+  font-size: 2em;
+}
+
+
+div nav {
+  width: 30%;
+  margin: 0 auto;
+  font-weight: 700;
+  
+}
+
+div nav a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #000000;
+}
+
+div nav a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+ul li{
+  display: inline;
+}
+
+
+table {
+  font-size: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 0.7em 0.7em -0.3em #90ad5e9f;
+}
+
+thead tr {
+  background-color: #efffa8;
+  color: rgb(0, 0, 0);
+}
+
+tbody tr:nth-of-type(2n+1) {
+  background-color: #f8f9fa;
+}
+
+tbody tr:nth-of-type(2n) {
+  background-color: #7efbffd4;
+}
+
+table, th, td {
+  border: 1px solid black; 
+}
